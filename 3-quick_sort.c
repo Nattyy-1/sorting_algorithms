@@ -62,7 +62,7 @@ void quick_sort_h(int *array, size_t lo, size_t hi, size_t size)
 
 	p = partition(array, lo, hi, size);
 
-	if (p > 0)
+	if (p > lo)
 		quick_sort_h(array, lo, p - 1, size);
 
 	quick_sort_h(array, p + 1, hi, size);
